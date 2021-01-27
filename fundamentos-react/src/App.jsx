@@ -2,6 +2,7 @@ import React from 'react';
 
 import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro';
+import Aleatorio from './components/basicos/Aleatorio';
 
 export default function App(props) {
   return (
@@ -12,6 +13,10 @@ export default function App(props) {
         titulo='Segundo Componente' 
         aluno='Rodolfo'
         nota={ 9.8 }
+      />
+      <Aleatorio 
+        min={ 2 }
+        max={ 18 }
       />
     </div>
   )
