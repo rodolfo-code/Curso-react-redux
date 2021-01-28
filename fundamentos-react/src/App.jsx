@@ -6,12 +6,16 @@ import ComParametro from './components/basicos/ComParametro';
 import Aleatorio from './components/basicos/Aleatorio';
 import Card from './components/layout/Card';
 import Fragmento from './components/basicos/Fragmento';
+import Familia from './components/basicos/Familia';
 
 export default function App(props) {
   return (
     <div className='app'>
       <h1 className='title-header'>Fundamentos React</h1>
       <div className='cards'>
+      <Card className='primeiro' titulo='Componentes com Filhos' color='#8874a3'>
+          <Familia lastname='Oberhauser' />       
+        </Card>
         <Card titulo='Desafio Aleatório' color='#96ceb4'>
           <Aleatorio 
             min={ 2 }
