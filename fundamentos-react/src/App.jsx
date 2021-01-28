@@ -12,19 +12,19 @@ export default function App(props) {
     <div className='app'>
       <h1 className='title-header'>Fundamentos React</h1>
       <div className='cards'>
-        <Card titulo='Desafio Aleatório'>
+        <Card titulo='Desafio Aleatório' color='#96ceb4'>
           <Aleatorio 
             min={ 2 }
             max={ 60 }
           />
         </Card>
-        <Card className='primeiro' titulo='Primeiro Componente'>
+        <Card className='primeiro' titulo='Primeiro Componente' color='#ff6f69'>
           <Primeiro />        
         </Card>
-        <Card className='fragmento' titulo='Fragmento'>
+        <Card className='fragmento' titulo='Fragmento' color='#ffcc5c'>
           <Fragmento />
         </Card>
-        <Card titulo='Situação do Aluno'>
+        <Card titulo='Situação do Aluno' color='#8b9dc3'>
           <ComParametro 
             titulo='Segundo Componente' 
             aluno='Rodolfo'
