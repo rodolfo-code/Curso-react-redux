@@ -8,12 +8,20 @@ import Card from "./components/layout/Card";
 import Fragmento from "./components/basicos/Fragmento";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from './components/basicos/FamiliaMembro';
+import ListaAlunos from './components/repeticao/ListaAlunos'
 
 export default function App(props) {
   return (
     <div className="app">
       <h1 className="title-header">Fundamentos React</h1>
       <div className="cards">
+        <Card
+          className="primeiro"
+          titulo="Repetição"
+          color="#F24405"
+        >
+          <ListaAlunos></ListaAlunos>
+        </Card>
         <Card
           className="primeiro"
           titulo="Componentes com Filhos"
