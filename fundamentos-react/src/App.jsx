@@ -7,8 +7,8 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/layout/Card";
 import Fragmento from "./components/basicos/Fragmento";
 import Familia from "./components/basicos/Familia";
-import FamiliaMembro from './components/basicos/FamiliaMembro';
-import ListaAlunos from './components/repeticao/ListaAlunos'
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 import { TabelaProdutos } from "./components/repeticao/TabelaProdutos";
 
 export default function App(props) {
@@ -16,18 +16,10 @@ export default function App(props) {
     <div className="app">
       <h1 className="title-header">Fundamentos React</h1>
       <div className="cards">
-      <Card
-          className="primeiro"
-          titulo="Repetição"
-          color="#3784E8"
-        >
+        <Card className="primeiro" titulo="Repetição" color="#3784E8">
           <TabelaProdutos />
         </Card>
-        <Card
-          className="primeiro"
-          titulo="Repetição"
-          color="#F24405"
-        >
+        <Card className="primeiro" titulo="Repetição" color="#F24405">
           <ListaAlunos></ListaAlunos>
         </Card>
         <Card
@@ -35,7 +27,7 @@ export default function App(props) {
           titulo="Componentes com Filhos"
           color="#8874a3"
         >
-          <Familia lastname='Oberhauser'>
+          <Familia lastname="Oberhauser">
             <FamiliaMembro firstname="Rodolfo" />
             <FamiliaMembro firstname="Katia" />
             <FamiliaMembro firstname="Camilo" />
