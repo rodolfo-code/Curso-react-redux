@@ -9,12 +9,20 @@ import Fragmento from "./components/basicos/Fragmento";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from './components/basicos/FamiliaMembro';
 import ListaAlunos from './components/repeticao/ListaAlunos'
+import { TabelaProdutos } from "./components/repeticao/TabelaProdutos";
 
 export default function App(props) {
   return (
     <div className="app">
       <h1 className="title-header">Fundamentos React</h1>
       <div className="cards">
+      <Card
+          className="primeiro"
+          titulo="Repetição"
+          color="#3784E8"
+        >
+          <TabelaProdutos />
+        </Card>
         <Card
           className="primeiro"
           titulo="Repetição"

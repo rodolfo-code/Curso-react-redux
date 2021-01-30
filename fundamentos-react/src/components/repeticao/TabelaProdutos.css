@@ -1,0 +1,12 @@
+.tabelaProdutos th {
+  background-color: #0e7c7c;
+  color: #ffffff;
+}
+
+.tabelaProdutos {
+  width: 100%;
+}
+
+.tabelaProdutos .par {
+  background-color: #ddd;
+}
