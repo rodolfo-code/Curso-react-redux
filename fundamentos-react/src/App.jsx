@@ -10,12 +10,21 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import { TabelaProdutos } from "./components/repeticao/TabelaProdutos";
+import ParOuImpar from "./components/condicional/ParOuImper";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
 
 export default function App(props) {
   return (
     <div className="app">
       <h1 className="title-header">Fundamentos React</h1>
       <div className="cards">
+        {/* <Card className="primeiro" titulo="Repetição" color="#FFC518">
+          
+        </Card> */}
+        <Card className="primeiro" titulo="Repetição" color="#FFC518">
+          <ParOuImpar numero={21} />
+          <UsuarioInfo usuario={{ nome: 'Fernando' }} />
+        </Card>
         <Card className="primeiro" titulo="Repetição" color="#3784E8">
           <TabelaProdutos />
         </Card>
