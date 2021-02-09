@@ -8,14 +8,12 @@ const headerProps = {
 };
 
 const baseUrl = "http://localhost:3001/users";
+const initialState = {
+  user: { name: "", email: "" },
+  list: [],
+};
 
 export default class UserCrud extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
   render() {
     return (
       <Main {...headerProps}>
