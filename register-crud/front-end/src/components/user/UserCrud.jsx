@@ -8,12 +8,6 @@ const headerProps = {
 };
 
 export default class UserCrud extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
   render() {
     return (
       <Main {...headerProps}>
