@@ -14,6 +14,10 @@ const initialState = {
 };
 
 export default class UserCrud extends Component {
+  state = { ...initialState };
+  clear() {
+    this.setState({ user: initialState.user });
+  }
   render() {
     return (
       <Main {...headerProps}>
