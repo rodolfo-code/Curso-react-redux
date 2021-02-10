@@ -20,7 +20,11 @@ export default class UserCrud extends Component {
     this.setState({ user: initialState.user });
   }
 
-  save() {}
+  save() {
+    const user = this.state.user
+    const method = user.id ? 'put' : 'post'
+    const url = user.id ? `${baseUrl}/${user.id}` : baseUrl
+  }
 
   render() {
     return (
