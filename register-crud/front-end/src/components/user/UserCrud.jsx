@@ -156,8 +156,7 @@ export default class UserCrud extends Component {
     return (
       <Main {...headerProps}>
         {this.renderForm()}
-        {initialState.list === undefined ? 'Carregando' :
-          this.renderTable()}
+        {this.renderTable()}
       </Main>
     );
   }

@@ -1,19 +1,19 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Arthur Oliveira",
-      "email": "aoliveira@colder.com.br"
+      "name": "Rodolfo Vinicius Geraldo ",
+      "email": "oliveira.vinig@gmail.com",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Maria Julia da Silva",
-      "email": "mjds@empresa.com"
+      "name": "Arthur Oliveira Macedo",
+      "email": "gostozinho@bol.com.br",
+      "id": 2
     },
     {
-      "name": "Rodolfo Oliveira",
-      "email": "rodolfo.oliv@bol.com.br",
-      "id": 3
+      "name": "Edna Maria Geraldo de Oliveira",
+      "email": "EleninhaSilvaVIT@outlook.com",
+      "id": 4
     }
   ]
 }
