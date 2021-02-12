@@ -49,9 +49,10 @@ const UseState = (props) => {
       <input type="text" className="input"
         value={name}
         onChange={(e) => setName(e.target.value)}/>
-        <button className='btn' onClick={() => setText((current) => current = name)}>Salvar</button>
-        <span><strong>
-          {text}</strong></span>
+      <button className='btn' onClick={() => setText((current) => current = name)}>Salvar</button>
+      <span><strong>
+        {text}
+      </strong></span>
     </div>
   );
 };
