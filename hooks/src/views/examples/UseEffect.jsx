@@ -29,7 +29,7 @@ const UseEffect = (props) => {
 	useEffect(() => {
 		if(fatorial > 1000000)
 			return document.title = "Eita"
-	})
+	}, [fatorial])
 	
 
 	// Exercício #02
