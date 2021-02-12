@@ -35,12 +35,12 @@ const UseState = (props) => {
           </button>
           <button 
             className="btn"
-            onClick={() => setCount(xablinsk => count > 0 ? xablinsk * 2: random())}>
+            onClick={() => setCount(xablinsk => count === 0 ? random() : xablinsk * 2)}>
               1000
             </button>
             <button 
               className="btn"
-              onClick={() => setCount((current) => current = text)}>
+              onClick={() => setCount((current) => current = 0)}>
               Reset
             </button>
         </div>
