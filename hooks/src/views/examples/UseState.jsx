@@ -4,6 +4,8 @@ import SectionTitle from "../../components/layout/SectionTitle";
 
 const UseState = (props) => {
   const [count, setCount] = useState(0);
+  const [name, setName] = useState('Inicial')
+  const [text, setText] = useState('Esperando sua boa vontade de digitar algo')
 
   const random = () => {
     const rand = Math.floor(Math.random() * 100)
@@ -38,12 +40,18 @@ const UseState = (props) => {
             </button>
             <button 
               className="btn"
-              onClick={() => setCount(count - count)}>
+              onClick={() => setCount((current) => current = text)}>
               Reset
             </button>
         </div>
       </div>
       <SectionTitle title="Exercício #02" />
+      <input type="text" className="input"
+        value={name}
+        onChange={(e) => setName(e.target.value)}/>
+        <button className='btn' onClick={() => setText((current) => current = name)}>Salvar</button>
+        <span><strong>
+          {text}</strong></span>
     </div>
   );
 };
